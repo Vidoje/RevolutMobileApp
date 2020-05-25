@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civFlag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/eu_flag"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tvCurrencyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/civFlag"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:text="USD"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/etCurrencyValue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:inputType="number"/>
+
+</RelativeLayout>
